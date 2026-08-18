@@ -82,10 +82,6 @@ in the program.
 
 ### 2. Configure the app
 
-```bash
-cp .env.example .env
-```
-
 Fill in `.env`:
 
 ```
@@ -185,15 +181,7 @@ instead of a blank page or stack trace.
 
 ## Deployment
 
-Deployed on Vercel's free tier: `<add your live URL here after deploying>`
-
-To deploy your own copy:
-
-1. Push this repo to GitHub.
-2. Import it at [vercel.com/new](https://vercel.com/new).
-3. Add `COGNODB_URI`, `COGNODB_USER`, `COGNODB_PASSWORD` as environment variables in the Vercel
-   project settings (Settings → Environment Variables).
-4. Deploy. Vercel builds and hosts the Next.js app directly — no separate backend needed.
+Deployed on Vercel's free tier: `https://course-prerequisite-planner.vercel.app/`
 
 ## Screenshots
 
