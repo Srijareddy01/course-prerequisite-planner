@@ -1,7 +1,6 @@
 # Coursegraph — Course & Prerequisite Planner
 
-A small full-stack app for exploring a university course catalog as what it actually is: a graph.
-Built for the Wexa AI take-home assignment, backed by **CognoDB**.
+Coursegraph is an academic advisor tool for exploring a university course catalog and planning a student's next courses. It uses a graph database because the core of the problem is understanding relationships between courses, prerequisites, students, and topics.
 
 - **Catalog** — search and filter every course in the curriculum.
 - **Course detail** — see a course's direct prerequisites, the courses that build on it, and its
@@ -81,10 +80,6 @@ in the program.
    password for the `cognodb` user — **the password is shown once**, so save it immediately.
 
 ### 2. Configure the app
-
-```bash
-cp .env.example .env
-```
 
 Fill in `.env`:
 
@@ -185,15 +180,7 @@ instead of a blank page or stack trace.
 
 ## Deployment
 
-Deployed on Vercel's free tier: `<add your live URL here after deploying>`
-
-To deploy your own copy:
-
-1. Push this repo to GitHub.
-2. Import it at [vercel.com/new](https://vercel.com/new).
-3. Add `COGNODB_URI`, `COGNODB_USER`, `COGNODB_PASSWORD` as environment variables in the Vercel
-   project settings (Settings → Environment Variables).
-4. Deploy. Vercel builds and hosts the Next.js app directly — no separate backend needed.
+Deployed on Vercel's free tier: `https://course-prerequisite-planner.vercel.app/`
 
 ## Screenshots
 
