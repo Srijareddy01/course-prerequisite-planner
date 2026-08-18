@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-brass/10;
+  }
+  ::selection {
+    @apply bg-brass/30 text-parchment;
+  }
+  a {
+    @apply transition-colors;
+  }
+}
+
+@layer components {
+  .ledger-card {
+    @apply bg-ink-light border border-brass/15 rounded-sm;
+  }
+
+  .eyebrow {
+    @apply font-mono text-[11px] tracking-[0.18em] uppercase text-brass/80;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-brass text-ink font-body font-semibold text-sm px-4 py-2 rounded-sm
+           hover:bg-brass-light transition-colors disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 border border-brass/40 text-parchment font-body text-sm px-4 py-2 rounded-sm
+           hover:border-brass hover:text-brass-light transition-colors disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+
+  .field {
+    @apply bg-ink border border-brass/25 rounded-sm px-3 py-2 text-parchment placeholder:text-parchment/40
+           focus:outline-none focus:border-brass text-sm;
+  }
+
+  .pill {
+    @apply font-mono text-[11px] tracking-wide px-2 py-0.5 rounded-sm border;
+  }
+}
