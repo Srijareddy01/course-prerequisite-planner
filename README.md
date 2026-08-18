@@ -1,7 +1,6 @@
 # Coursegraph — Course & Prerequisite Planner
 
-A small full-stack app for exploring a university course catalog as what it actually is: a graph.
-Built for the Wexa AI take-home assignment, backed by **CognoDB**.
+Coursegraph is an academic advisor tool for exploring a university course catalog and planning a student's next courses. It uses a graph database because the core of the problem is understanding relationships between courses, prerequisites, students, and topics.
 
 - **Catalog** — search and filter every course in the curriculum.
 - **Course detail** — see a course's direct prerequisites, the courses that build on it, and its
